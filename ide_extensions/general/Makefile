@@ -36,10 +36,14 @@ change_case:
 	${LINK} "https://marketplace.visualstudio.com/items?itemName=wmaurer.change-case"
 	${INSTALL} "vscode:extension/wmaurer.change-case"
 
-# COLORS
+# COLORS # https://linux.101hacks.com/ps1-examples/prompt-color-using-tput/
+BLACK  := $(shell tput -Txterm setaf 0)
+RED  := $(shell tput -Txterm setaf 1)
 GREEN  := $(shell tput -Txterm setaf 2)
 YELLOW := $(shell tput -Txterm setaf 3)
 BLUE  := $(shell tput -Txterm setaf 4)
+MEGENTA  := $(shell tput -Txterm setaf 5)
+CYAN  := $(shell tput -Txterm setaf 6)
 WHITE  := $(shell tput -Txterm setaf 7)
 NC := "\e[0m"
 RESET  := $(shell tput -Txterm sgr0)
