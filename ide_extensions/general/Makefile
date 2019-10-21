@@ -36,6 +36,12 @@ change_case:
 	${LINK} "https://marketplace.visualstudio.com/items?itemName=wmaurer.change-case"
 	${INSTALL} "vscode:extension/wmaurer.change-case"
 
+git_blame:
+	${INFO} "gitblame"
+	@echo 'See git blame information in the status bar.'
+	${LINK} "https://marketplace.visualstudio.com/items?itemName=waderyan.gitblame"
+	${INSTALL} "vscode:extension/waderyan.gitblame"
+
 # COLORS # https://linux.101hacks.com/ps1-examples/prompt-color-using-tput/
 BLACK  := $(shell tput -Txterm setaf 0)
 RED  := $(shell tput -Txterm setaf 1)
