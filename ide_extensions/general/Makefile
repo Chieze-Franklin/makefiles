@@ -1,4 +1,4 @@
-# https://github.com/andela/engineering-playbook/tree/master/4.%20Laptop%20Setup # Git-blame
+# https://github.com/andela/engineering-playbook/tree/master/4.%20Laptop%20Setup # Highlight Trailing White Spaces
 
 alphabetical_sorter:
 	${INFO} "Alphabetical Sorter"
@@ -37,10 +37,16 @@ change_case:
 	${INSTALL} "vscode:extension/wmaurer.change-case"
 
 git_blame:
-	${INFO} "gitblame"
+	${INFO} "Git Blame"
 	@echo 'See git blame information in the status bar.'
 	${LINK} "https://marketplace.visualstudio.com/items?itemName=waderyan.gitblame"
 	${INSTALL} "vscode:extension/waderyan.gitblame"
+
+git_history:
+	${INFO} "Git History"
+	@echo 'View git log, file history, compare branches or commits'
+	${LINK} "https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory"
+	${INSTALL} "vscode:extension/donjayamanne.githistory"
 
 # COLORS # https://linux.101hacks.com/ps1-examples/prompt-color-using-tput/
 BLACK  := $(shell tput -Txterm setaf 0)
