@@ -48,6 +48,12 @@ git_history:
 	${LINK} "https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory"
 	${INSTALL} "vscode:extension/donjayamanne.githistory"
 
+highlight_whitespace:
+	${INFO} "Highlight Trailing White Spaces"
+	@echo 'This extension highlight trailing white spaces in red'
+	${LINK} "https://marketplace.visualstudio.com/items?itemName=ybaumes.highlight-trailing-white-spaces"
+	${INSTALL} "vscode:extension/ybaumes.highlight-trailing-white-spaces"
+
 # COLORS # https://linux.101hacks.com/ps1-examples/prompt-color-using-tput/
 BLACK  := $(shell tput -Txterm setaf 0)
 RED  := $(shell tput -Txterm setaf 1)
