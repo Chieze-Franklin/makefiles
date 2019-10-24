@@ -1,4 +1,4 @@
-# https://github.com/andela/engineering-playbook/tree/master/4.%20Laptop%20Setup # Highlight Trailing White Spaces
+# https://github.com/andela/engineering-playbook/tree/master/4.%20Laptop%20Setup # Markdown lint
 
 alphabetical_sorter:
 	${INFO} "Alphabetical Sorter"
