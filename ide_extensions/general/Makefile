@@ -1,4 +1,4 @@
-# https://github.com/andela/engineering-playbook/tree/master/4.%20Laptop%20Setup # Markdown lint
+# https://github.com/andela/engineering-playbook/tree/master/4.%20Laptop%20Setup # Trailing spaces
 
 alphabetical_sorter:
 	${INFO} "Alphabetical Sorter"
@@ -53,6 +53,12 @@ highlight_whitespace:
 	@echo 'This extension highlight trailing white spaces in red'
 	${LINK} "https://marketplace.visualstudio.com/items?itemName=ybaumes.highlight-trailing-white-spaces"
 	${INSTALL} "vscode:extension/ybaumes.highlight-trailing-white-spaces"
+
+markdownlint:
+	${INFO} "markdownlint"
+	@echo 'Markdown linting and style checking for Visual Studio Code'
+	${LINK} "https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint"
+	${INSTALL} "vscode:extension/DavidAnson.vscode-markdownlint"
 
 # COLORS # https://linux.101hacks.com/ps1-examples/prompt-color-using-tput/
 BLACK  := $(shell tput -Txterm setaf 0)
