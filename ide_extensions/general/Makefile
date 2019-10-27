@@ -1,4 +1,4 @@
-# https://github.com/andela/engineering-playbook/tree/master/4.%20Laptop%20Setup # Trailing spaces
+# https://github.com/andela/engineering-playbook/tree/master/4.%20Laptop%20Setup # vscode-proto3
 
 alphabetical_sorter:
 	${INFO} "Alphabetical Sorter"
@@ -61,10 +61,10 @@ markdownlint:
 	${INSTALL} "vscode:extension/DavidAnson.vscode-markdownlint"
 
 trailing_spaces:
-	${INFO} "markdownlint"
-	@echo 'Markdown linting and style checking for Visual Studio Code'
-	${LINK} "https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint"
-	${INSTALL} "vscode:extension/DavidAnson.vscode-markdownlint"
+	${INFO} "Trailing Spaces"
+	@echo 'Highlight trailing spaces and delete them in a flash!'
+	${LINK} "https://marketplace.visualstudio.com/items?itemName=shardulm94.trailing-spaces
+	${INSTALL} "vscode:extension/shardulm94.trailing-spaces
 
 # COLORS # https://linux.101hacks.com/ps1-examples/prompt-color-using-tput/
 BLACK  := $(shell tput -Txterm setaf 0)
