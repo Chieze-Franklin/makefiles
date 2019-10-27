@@ -60,6 +60,12 @@ markdownlint:
 	${LINK} "https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint"
 	${INSTALL} "vscode:extension/DavidAnson.vscode-markdownlint"
 
+trailing_spaces:
+	${INFO} "markdownlint"
+	@echo 'Markdown linting and style checking for Visual Studio Code'
+	${LINK} "https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint"
+	${INSTALL} "vscode:extension/DavidAnson.vscode-markdownlint"
+
 # COLORS # https://linux.101hacks.com/ps1-examples/prompt-color-using-tput/
 BLACK  := $(shell tput -Txterm setaf 0)
 RED  := $(shell tput -Txterm setaf 1)
