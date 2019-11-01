@@ -64,7 +64,13 @@ trailing_spaces:
 	${INFO} "Trailing Spaces"
 	@echo 'Highlight trailing spaces and delete them in a flash!'
 	${LINK} "https://marketplace.visualstudio.com/items?itemName=shardulm94.trailing-spaces
-	${INSTALL} "vscode:extension/shardulm94.trailing-spaces
+	${INSTALL} "vscode:extension/shardulm94.trailing-spaces"
+
+vscode_proto3:
+	${INFO} "vscode-proto3"
+	@echo 'Protobuf 3 support for Visual Studio Code'
+	${LINK} "https://marketplace.visualstudio.com/items?itemName=zxh404.vscode-proto3
+	${INSTALL} "vscode:extension/zxh404.vscode-proto3"
 
 # COLORS # https://linux.101hacks.com/ps1-examples/prompt-color-using-tput/
 BLACK  := $(shell tput -Txterm setaf 0)
