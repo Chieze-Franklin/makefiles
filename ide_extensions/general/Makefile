@@ -1,4 +1,4 @@
-# https://github.com/andela/engineering-playbook/tree/master/4.%20Laptop%20Setup # vscode-proto3
+# https://github.com/andela/engineering-playbook/tree/master/4.%20Laptop%20Setup # eslint
 
 alphabetical_sorter:
 	${INFO} "Alphabetical Sorter"
