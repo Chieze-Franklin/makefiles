@@ -5,6 +5,11 @@ eslint:
 	@echo 'Integrates ESLint JavaScript into VS Code.'
 	${LINK} "https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint"
 	${INSTALL} "vscode:extension/dbaeumer.vscode-eslint"
+import_cost:
+	${INFO} "Import Cost"
+	@echo 'Display import/require package size in the editor'
+	${LINK} "https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost"
+	${INSTALL} "vscode:extension/wix.vscode-import-cost"
 
 # COLORS # https://linux.101hacks.com/ps1-examples/prompt-color-using-tput/
 BLACK  := $(shell tput -Txterm setaf 0)
