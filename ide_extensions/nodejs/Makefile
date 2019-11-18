@@ -1,4 +1,4 @@
-# https://github.com/andela/engineering-playbook/tree/master/4.%20Laptop%20Setup # Import cost
+# https://github.com/andela/engineering-playbook/tree/master/4.%20Laptop%20Setup # Node.js Modules Intellisense
 
 eslint:
 	${INFO} "ESLint"
