@@ -11,6 +11,12 @@ import_cost:
 	${LINK} "https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost"
 	${INSTALL} "vscode:extension/wix.vscode-import-cost"
 
+modules_intellisense:
+	${INFO} "Node.js Modules Intellisense"
+	@echo 'Autocompletes Node.js modules in import statements'
+	${LINK} "https://marketplace.visualstudio.com/items?itemName=leizongmin.node-module-intellisense"
+	${INSTALL} "vscode:extension/leizongmin.node-module-intellisense"
+
 # COLORS # https://linux.101hacks.com/ps1-examples/prompt-color-using-tput/
 BLACK  := $(shell tput -Txterm setaf 0)
 RED  := $(shell tput -Txterm setaf 1)
