@@ -17,6 +17,12 @@ modules_intellisense:
 	${LINK} "https://marketplace.visualstudio.com/items?itemName=leizongmin.node-module-intellisense"
 	${INSTALL} "vscode:extension/leizongmin.node-module-intellisense"
 
+path_intellisense:
+	${INFO} "Path Intellisense"
+	@echo 'Visual Studio Code plugin that autocompletes filenames'
+	${LINK} "https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense"
+	${INSTALL} "vscode:extension/christian-kohler.path-intellisense"
+
 # COLORS # https://linux.101hacks.com/ps1-examples/prompt-color-using-tput/
 BLACK  := $(shell tput -Txterm setaf 0)
 RED  := $(shell tput -Txterm setaf 1)
