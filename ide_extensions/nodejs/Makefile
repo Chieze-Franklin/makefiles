@@ -1,4 +1,4 @@
-# https://github.com/andela/engineering-playbook/tree/master/4.%20Laptop%20Setup # Path Intellisense
+# https://github.com/andela/engineering-playbook/tree/master/4.%20Laptop%20Setup # Regex Preview and Editor
 
 eslint:
 	${INFO} "ESLint"
