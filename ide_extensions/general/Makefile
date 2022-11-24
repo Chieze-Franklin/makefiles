@@ -46,6 +46,12 @@ git_history:
 	${LINK} "https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory"
 	${INSTALL} "vscode:extension/donjayamanne.githistory"
 
+git_lens:
+	${INFO} "Git Lens"
+	@echo 'GitLens supercharges Git inside VS Code and unlocks untapped knowledge within each repository.'
+	${LINK} "https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens"
+	${INSTALL} "vscode:extension/eamodio.gitlens"
+
 highlight_whitespace:
 	${INFO} "Highlight Trailing White Spaces"
 	@echo 'This extension highlight trailing white spaces in red'
