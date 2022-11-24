@@ -34,24 +34,6 @@ change_case:
 	${LINK} "https://marketplace.visualstudio.com/items?itemName=wmaurer.change-case"
 	${INSTALL} "vscode:extension/wmaurer.change-case"
 
-git_blame:
-	${INFO} "Git Blame"
-	@echo 'See git blame information in the status bar.'
-	${LINK} "https://marketplace.visualstudio.com/items?itemName=waderyan.gitblame"
-	${INSTALL} "vscode:extension/waderyan.gitblame"
-
-git_history:
-	${INFO} "Git History"
-	@echo 'View git log, file history, compare branches or commits'
-	${LINK} "https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory"
-	${INSTALL} "vscode:extension/donjayamanne.githistory"
-
-git_lens:
-	${INFO} "Git Lens"
-	@echo 'GitLens supercharges Git inside VS Code and unlocks untapped knowledge within each repository.'
-	${LINK} "https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens"
-	${INSTALL} "vscode:extension/eamodio.gitlens"
-
 highlight_whitespace:
 	${INFO} "Highlight Trailing White Spaces"
 	@echo 'This extension highlight trailing white spaces in red'
@@ -67,13 +49,13 @@ markdownlint:
 trailing_spaces:
 	${INFO} "Trailing Spaces"
 	@echo 'Highlight trailing spaces and delete them in a flash!'
-	${LINK} "https://marketplace.visualstudio.com/items?itemName=shardulm94.trailing-spaces
+	${LINK} "https://marketplace.visualstudio.com/items?itemName=shardulm94.trailing-spaces"
 	${INSTALL} "vscode:extension/shardulm94.trailing-spaces"
 
 vscode_proto3:
 	${INFO} "vscode-proto3"
 	@echo 'Protobuf 3 support for Visual Studio Code'
-	${LINK} "https://marketplace.visualstudio.com/items?itemName=zxh404.vscode-proto3
+	${LINK} "https://marketplace.visualstudio.com/items?itemName=zxh404.vscode-proto3"
 	${INSTALL} "vscode:extension/zxh404.vscode-proto3"
 
 # COLORS # https://linux.101hacks.com/ps1-examples/prompt-color-using-tput/
