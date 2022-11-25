@@ -22,12 +22,6 @@ code_spell_checker:
 	${LINK} "https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker"
 	${INSTALL} "vscode:extension/streetsidesoftware.code-spell-checker"
 
-codemetrics:
-	${INFO} "CodeMetrics"
-	@echo 'Computes complexity in TypeScript / JavaScript files.'
-	${LINK} "https://marketplace.visualstudio.com/items?itemName=kisstkondoros.vscode-codemetrics"
-	${INSTALL} "vscode:extension/kisstkondoros.vscode-codemetrics"
-
 change_case:
 	${INFO} "change-case"
 	@echo 'Quickly change the case (camelCase, CONSTANT_CASE, snake_case, etc) of the current selection or current word'
