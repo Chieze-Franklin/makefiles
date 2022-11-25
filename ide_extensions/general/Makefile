@@ -4,18 +4,6 @@ alphabetical_sorter:
 	${LINK} "https://marketplace.visualstudio.com/items?itemName=ue.alphabetical-sorter"
 	${INSTALL} "vscode:extension/ue.alphabetical-sorter"
 
-auto_close_tag:
-	${INFO} "Auto Close Tag"
-	@echo 'Automatically add HTML/XML close tag, same as Visual Studio IDE or Sublime Text'
-	${LINK} "https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag"
-	${INSTALL} "vscode:extension/formulahendry.auto-close-tag"
-
-auto_rename_tag:
-	${INFO} "Auto Rename Tag"
-	@echo 'Automatically rename paired HTML/XML tag, same as Visual Studio IDE does.'
-	${LINK} "https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag"
-	${INSTALL} "vscode:extension/formulahendry.auto-rename-tag"
-
 code_spell_checker:
 	${INFO} "Code Spell Checker"
 	@echo 'A basic spell checker that works well with camelCase code.'
@@ -39,12 +27,6 @@ makefile:
 	@echo 'Provide makefile support in VS Code: C/C++ IntelliSense, build, debug/run'
 	${LINK} "https://marketplace.visualstudio.com/items?itemName=ms-vscode.makefile-tools"
 	${INSTALL} "vscode:extension/ms-vscode.makefile-tools"
-
-markdownlint:
-	${INFO} "markdownlint"
-	@echo 'Markdown linting and style checking for Visual Studio Code'
-	${LINK} "https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint"
-	${INSTALL} "vscode:extension/DavidAnson.vscode-markdownlint"
 
 prettier:
 	${INFO} "Prettier - Code formatter"
