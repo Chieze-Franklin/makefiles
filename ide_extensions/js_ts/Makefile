@@ -1,3 +1,9 @@
+codemetrics:
+	${INFO} "CodeMetrics"
+	@echo 'Computes complexity in TypeScript / JavaScript files.'
+	${LINK} "https://marketplace.visualstudio.com/items?itemName=kisstkondoros.vscode-codemetrics"
+	${INSTALL} "vscode:extension/kisstkondoros.vscode-codemetrics"
+
 eslint:
 	${INFO} "ESLint"
 	@echo 'Integrates ESLint JavaScript into VS Code.'
