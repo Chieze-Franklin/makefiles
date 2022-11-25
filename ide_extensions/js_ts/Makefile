@@ -15,6 +15,18 @@ import_cost:
 	@echo 'Display import/require package size in the editor'
 	${LINK} "https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost"
 	${INSTALL} "vscode:extension/wix.vscode-import-cost"
+	
+jest:
+	${INFO} "Jest"
+	@echo 'Supports full jest features in vscode environment'
+	${LINK} "https://marketplace.visualstudio.com/items?itemName=Orta.vscode-jest"
+	${INSTALL} "vscode:extension/Orta.vscode-jest"
+
+jest_runner:
+	${INFO} "Jest Runner"
+	@echo 'Simple way to run or debug a single (or multiple) tests from context-menu'
+	${LINK} "https://marketplace.visualstudio.com/items?itemName=firsttris.vscode-jest-runner"
+	${INSTALL} "vscode:extension/firsttris.vscode-jest-runner"
 
 modules_intellisense:
 	${INFO} "Node.js Modules Intellisense"
