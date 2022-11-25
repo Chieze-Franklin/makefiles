@@ -34,11 +34,23 @@ highlight_whitespace:
 	${LINK} "https://marketplace.visualstudio.com/items?itemName=ybaumes.highlight-trailing-white-spaces"
 	${INSTALL} "vscode:extension/ybaumes.highlight-trailing-white-spaces"
 
+makefile:
+	${INFO} "Makefile Tools"
+	@echo 'Provide makefile support in VS Code: C/C++ IntelliSense, build, debug/run'
+	${LINK} "https://marketplace.visualstudio.com/items?itemName=ms-vscode.makefile-tools"
+	${INSTALL} "vscode:extension/ms-vscode.makefile-tools"
+
 markdownlint:
 	${INFO} "markdownlint"
 	@echo 'Markdown linting and style checking for Visual Studio Code'
 	${LINK} "https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint"
 	${INSTALL} "vscode:extension/DavidAnson.vscode-markdownlint"
+
+prettier:
+	${INFO} "Prettier - Code formatter"
+	@echo 'Code formatter using prettier'
+	${LINK} "https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode"
+	${INSTALL} "vscode:extension/esbenp.prettier-vscode"
 
 trailing_spaces:
 	${INFO} "Trailing Spaces"
