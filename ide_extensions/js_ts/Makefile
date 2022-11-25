@@ -9,6 +9,7 @@ eslint:
 	@echo 'Integrates ESLint JavaScript into VS Code.'
 	${LINK} "https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint"
 	${INSTALL} "vscode:extension/dbaeumer.vscode-eslint"
+
 import_cost:
 	${INFO} "Import Cost"
 	@echo 'Display import/require package size in the editor'
