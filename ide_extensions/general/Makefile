@@ -34,6 +34,12 @@ prettier:
 	${LINK} "https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode"
 	${INSTALL} "vscode:extension/esbenp.prettier-vscode"
 
+thunder_client:
+	${INFO} "Thunder Client"
+	@echo 'Lightweight Rest API Client for VS Code'
+	${LINK} "https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client"
+	${INSTALL} "vscode:extension/rangav.vscode-thunder-client"
+
 trailing_spaces:
 	${INFO} "Trailing Spaces"
 	@echo 'Highlight trailing spaces and delete them in a flash!'
