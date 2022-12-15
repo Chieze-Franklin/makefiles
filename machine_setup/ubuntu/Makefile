@@ -25,6 +25,12 @@ install_docker_2:
 	${LINK} "https://docs.docker.com/engine/install/ubuntu"
 	${INSTALL} "docker-ce docker-ce-cli containerd.io docker-compose-plugin"
 
+snap_docker:
+	${INFO} "Install Docker"
+	@echo 'Install Docker using Snap'
+	${LINK} "https://snapcraft.io/docker"
+	${SNAP} "docker"
+
 snap_slack:
 	${INFO} "Install Slack"
 	@echo 'Install Slack using Snap'
