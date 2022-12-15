@@ -24,6 +24,18 @@ install_docker_2:
 	@echo 'Install Docker engine'
 	${LINK} "https://docs.docker.com/engine/install/ubuntu"
 	${INSTALL} "docker-ce docker-ce-cli containerd.io docker-compose-plugin"
+
+snap_slack:
+	${INFO} "Install Slack"
+	@echo 'Install Slack using Snap'
+	${LINK} "hhttps://snapcraft.io/slack"
+	${SNAP} "slack"
+
+snap_vscode:
+	${INFO} "Install VS Code"
+	@echo 'Install VS Code using Snap'
+	${LINK} "https://snapcraft.io/code"
+	${SNAP} "code --classic"
 	
 # COLORS # https://linux.101hacks.com/ps1-examples/prompt-color-using-tput/
 BLACK  := $(shell tput -Txterm setaf 0)
@@ -39,6 +51,7 @@ RESET  := $(shell tput -Txterm sgr0)
 # Shell Functions
 INFO := @bash -c 'printf "\n"; printf $(GREEN); echo "=== $$1 ==="; printf "\n"; printf $(NC)' SOME_VALUE
 INSTALL := @bash -c 'sudo apt-get update; sudo apt-get install $$1' SOME_VALUE
+SNAP := @bash -c 'sudo snap install $$1' SOME_VALUE
 # INSTALL2 := ${LINK} https://marketplace.visualstudio.com/items?itemName= $$1 && @python -m webbrowser -t vscode:extension/$$1
 UNINSTALL := @bash -c 'sudo apt-get remove $$1' SOME_VALUE
 LINK := @bash -c 'printf "\n"; printf $(BLUE); echo "$$1"; printf "\n"; printf $(NC)' SOME_VALUE
