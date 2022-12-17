@@ -1,16 +1,16 @@
-install_git:
+git:
 	${INFO} "Install Git"
 	@echo 'Install Git commands'
 	${LINK} "https://git-scm.com/"
 	${INSTALL} "git-all"
 
-install_docker_0:
+docker_0:
 	${INFO} "Uninstall Old Docker"
 	@echo 'Remove old Docker version'
 	${LINK} "https://docs.docker.com/engine/install/ubuntu"
 	${UNINSTALL} "docker docker-engine docker.io containerd runc"
 
-install_docker_1:
+docker_1:
 	${INFO} "Setup Docker"
 	@echo 'Set up Docker repository'
 	${LINK} "https://docs.docker.com/engine/install/ubuntu"
@@ -19,18 +19,24 @@ install_docker_1:
 	curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
 	@echo 'deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable' | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 
-install_docker_2:
+docker_2:
 	${INFO} "Install Docker"
 	@echo 'Install Docker engine'
 	${LINK} "https://docs.docker.com/engine/install/ubuntu"
 	${INSTALL} "docker-ce docker-ce-cli containerd.io docker-compose-plugin"
 
-install_docker_compose:
+docker_compose:
 	${INFO} "Install docker-compose"
 	@echo 'Install docker-compose (as a separate tool from Docker)'
 	${LINK} "https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-compose-on-ubuntu-20-04"
 	sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 	sudo chmod +x /usr/local/bin/docker-compose
+
+xclip:
+	${INFO} "Install XClip"
+	@echo 'Install XClip in order for VS Code extension, CodeSnap, to work'
+	${LINK} "https://marketplace.visualstudio.com/items?itemName=adpyke.codesnap"
+	sudo apt install xclip
 
 snap_docker:
 	${INFO} "Install Docker"
