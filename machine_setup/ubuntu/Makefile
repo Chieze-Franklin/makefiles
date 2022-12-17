@@ -32,6 +32,13 @@ docker_compose:
 	sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 	sudo chmod +x /usr/local/bin/docker-compose
 
+nvm:
+	${INFO} "Install nvm"
+	@echo 'Install Node Version Manager'
+	${LINK} "https://github.com/nvm-sh/nvm"
+	curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh | bash
+	export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")" [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+
 xclip:
 	${INFO} "Install XClip"
 	@echo 'Install XClip in order for VS Code extension, CodeSnap, to work'
