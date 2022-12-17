@@ -5,6 +5,13 @@ alphabetical_sorter:
 	${INSTALL} "https://marketplace.visualstudio.com/items?itemName=ue.alphabetical-sorter"
 	# ${INSTALL} "vscode:extension/ue.alphabetical-sorter"
 
+code_snap:
+	${INFO} "CodeSnap"
+	@echo '📷 Take beautiful screenshots of your code'
+	${LINK} "https://marketplace.visualstudio.com/items?itemName=adpyke.codesnap"
+	${INSTALL} "https://marketplace.visualstudio.com/items?itemName=adpyke.codesnap"
+	# ${INSTALL} "vscode:extension/adpyke.codesnap"
+
 code_spell_checker:
 	${INFO} "Code Spell Checker"
 	@echo 'A basic spell checker that works well with camelCase code.'
