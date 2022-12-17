@@ -1,3 +1,17 @@
+enable_startup_docker:
+	${INFO} "Enable Startup for Docker"
+	@echo 'Start Docker when machine boots'
+	${LINK} "https://docs.docker.com/engine/install/linux-postinstall/#configure-docker-to-start-on-boot-with-systemd"
+	sudo systemctl enable docker.service
+	sudo systemctl enable containerd.service
+
+disable_startup_docker:
+	${INFO} "Disable Startup for Docker"
+	@echo 'Do not start Docker when machine boots'
+	${LINK} "https://docs.docker.com/engine/install/linux-postinstall/#configure-docker-to-start-on-boot-with-systemd"
+	sudo systemctl disable docker.service
+	sudo systemctl disable containerd.service
+
 git:
 	${INFO} "Install Git"
 	@echo 'Install Git commands'
@@ -39,11 +53,13 @@ nvm:
 	curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh | bash
 	export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")" [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
-xclip:
-	${INFO} "Install XClip"
-	@echo 'Install XClip in order for VS Code extension, CodeSnap, to work'
-	${LINK} "https://marketplace.visualstudio.com/items?itemName=adpyke.codesnap"
-	sudo apt install xclip
+root_docker:
+	${INFO} "Root Docker"
+	@echo 'Run Docker as root user (without sudo)'
+	${LINK} "https://docs.docker.com/engine/install/linux-postinstall/#manage-docker-as-a-non-root-user"
+	sudo groupadd docker
+	sudo usermod -aG docker $USER
+	newgrp docker
 
 snap_docker:
 	${INFO} "Install Docker"
@@ -62,6 +78,12 @@ snap_vscode:
 	@echo 'Install VS Code using Snap'
 	${LINK} "https://snapcraft.io/code"
 	${SNAP} "code --classic"
+
+xclip:
+	${INFO} "Install XClip"
+	@echo 'Install XClip in order for VS Code extension, CodeSnap, to work'
+	${LINK} "https://marketplace.visualstudio.com/items?itemName=adpyke.codesnap"
+	sudo apt install xclip
 	
 # COLORS # https://linux.101hacks.com/ps1-examples/prompt-color-using-tput/
 BLACK  := $(shell tput -Txterm setaf 0)
