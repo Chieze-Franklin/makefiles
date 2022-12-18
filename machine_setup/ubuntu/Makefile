@@ -84,6 +84,12 @@ xclip:
 	@echo 'Install XClip in order for VS Code extension, CodeSnap, to work'
 	${LINK} "https://marketplace.visualstudio.com/items?itemName=adpyke.codesnap"
 	sudo apt install xclip
+
+yarn:
+	${INFO} "Install Yarn"
+	@echo 'Install Yarn'
+	${LINK} "https://yarnpkg.com/getting-started/install"
+	sudo apt install xclip
 	
 # COLORS # https://linux.101hacks.com/ps1-examples/prompt-color-using-tput/
 BLACK  := $(shell tput -Txterm setaf 0)
