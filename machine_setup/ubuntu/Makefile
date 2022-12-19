@@ -22,6 +22,10 @@ git.x:
 	@echo 'Install Git commands'
 	${LINK} "https://git-scm.com/"
 	${INSTALL} "git-all"
+	git config --global alias.br branch
+	git config --global alias.ch checkout
+	git config --global alias.cm "commit -m"
+	git config --global alias.st status
 	${SUCCESS} $@
 
 docker.x: docker_0.x docker_1.x docker_2.x
