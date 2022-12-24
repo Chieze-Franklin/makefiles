@@ -1,5 +1,7 @@
 # SHELL=/bin/bash
 
+default: git.x nvm.x yarn.x snap_vscode.x xclip.x snap_slack.x snap_docker.x root_docker.x docker_compose.x enable_startup_docker psql.x snap_dbeaver.x
+
 clean:
 	@rm -f $(wildcard *.x)
 
@@ -79,19 +81,21 @@ psql.x:
 	${INSTALL} "postgresql-client"
 	${SUCCESS} $@
 
-root_docker:
+root_docker.x:
 	${INFO} "Root Docker"
 	@echo 'Run Docker as root user (without sudo)'
 	${LINK} "https://docs.docker.com/engine/install/linux-postinstall/#manage-docker-as-a-non-root-user"
 	sudo groupadd docker
 	sudo usermod -aG docker $USER
 	newgrp docker
+	${SUCCESS} $@
 
-snap_dbeaver:
+snap_dbeaver.x:
 	${INFO} "Install DBeaver"
 	@echo 'Install DBeaver using Snap'
 	${LINK} "https://snapcraft.io/dbeaver-ce"
 	${SNAP} "dbeaver-ce"
+	${SUCCESS} $@
 
 snap_docker.x:
 	${INFO} "Install Docker"
