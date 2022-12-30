@@ -1,3 +1,10 @@
+all:
+	${INFO} "Install All"
+	@echo 'Install all extensions in this pack'
+	${LINK} "https://marketplace.visualstudio.com/items?itemName=fchieze.xpack-aws"
+	${INSTALL} "https://marketplace.visualstudio.com/items?itemName=fchieze.xpack-aws"
+	# ${INSTALL} "vscode:extension/fchieze.xpack-aws"
+
 aws_toolkit:
 	${INFO} "AWS Toolkit"
 	@echo 'Amazon Web Services toolkit for browsing and updating cloud resources'
