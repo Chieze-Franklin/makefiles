@@ -1,4 +1,10 @@
-all: alphabetical_sorter code_snap code_spell_checker change_case highlight_whitespace makefile polacode prettier thunder_client trailing_spaces vscode_proto3
+# all: alphabetical_sorter code_snap code_spell_checker change_case highlight_whitespace makefile polacode prettier thunder_client trailing_spaces vscode_proto3
+all:
+	${INFO} "Install All"
+	@echo 'Install all extensions in this pack'
+	${LINK} "https://marketplace.visualstudio.com/items?itemName=fchieze.xpack-general"
+	${INSTALL} "https://marketplace.visualstudio.com/items?itemName=fchieze.xpack-general"
+	# ${INSTALL} "vscode:extension/fchieze.xpack-general"
 
 alphabetical_sorter:
 	${INFO} "Alphabetical Sorter"
