@@ -1,3 +1,5 @@
+all: alphabetical_sorter code_snap code_spell_checker change_case highlight_whitespace makefile polacode prettier thunder_client trailing_spaces vscode_proto3
+
 alphabetical_sorter:
 	${INFO} "Alphabetical Sorter"
 	@echo 'Multi line or single line alphabetical sorter.'
@@ -39,6 +41,13 @@ makefile:
 	${LINK} "https://marketplace.visualstudio.com/items?itemName=ms-vscode.makefile-tools"
 	${INSTALL} "https://marketplace.visualstudio.com/items?itemName=ms-vscode.makefile-tools"
 	# ${INSTALL} "vscode:extension/ms-vscode.makefile-tools"
+
+polacode:
+	${INFO} "Polacode"
+	@echo '📸 Polaroid for your code'
+	${LINK} "https://marketplace.visualstudio.com/items?itemName=pnp.polacode"
+	${INSTALL} "https://marketplace.visualstudio.com/items?itemName=pnp.polacode"
+	# ${INSTALL} "vscode:extension/pnp.polacode"
 
 prettier:
 	${INFO} "Prettier - Code formatter"
