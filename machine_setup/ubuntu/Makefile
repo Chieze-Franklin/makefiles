@@ -133,7 +133,7 @@ yarn.x:
 	corepack enable
 	corepack prepare yarn@stable --activate
 	${SUCCESS} $@
-	
+
 # COLORS # https://linux.101hacks.com/ps1-examples/prompt-color-using-tput/
 BLACK  := $(shell tput -Txterm setaf 0)
 RED  := $(shell tput -Txterm setaf 1)
