@@ -1,3 +1,10 @@
+all:
+	${INFO} "Install All"
+	@echo 'Install all extensions in this pack'
+	${LINK} "https://marketplace.visualstudio.com/items?itemName=fchieze.xpack-jsts"
+	${INSTALL} "https://marketplace.visualstudio.com/items?itemName=fchieze.xpack-jsts"
+	# ${INSTALL} "vscode:extension/fchieze.xpack-jsts"
+
 codemetrics:
 	${INFO} "CodeMetrics"
 	@echo 'Computes complexity in TypeScript / JavaScript files.'
