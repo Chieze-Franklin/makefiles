@@ -129,7 +129,7 @@ yarn.x:
 	${INFO} "Install Yarn"
 	@echo 'Install Yarn'
 	${LINK} "https://yarnpkg.com/getting-started/install"
-	@NODE_VER="$$(echo $$(node -v) | cut -c 2-3)"; NODE_VER_16="16"; echo $$NODE_VER; if [ $$NODE_VER -lt $$NODE_VER_16 ]; then npm i -g corepack; fi
+	@NODE_VER="$$(echo $$(node -v) | cut -c 2-3)"; NODE_VER_16="16"; if [ $$NODE_VER -lt $$NODE_VER_16 ]; then npm i -g corepack; fi
 	corepack enable
 	corepack prepare yarn@stable --activate
 	${SUCCESS} $@
