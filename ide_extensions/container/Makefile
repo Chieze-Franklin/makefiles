@@ -1,3 +1,10 @@
+all:
+	${INFO} "Install All"
+	@echo 'Install all extensions in this pack'
+	${LINK} "https://marketplace.visualstudio.com/items?itemName=fchieze.xpack-container"
+	${INSTALL} "https://marketplace.visualstudio.com/items?itemName=fchieze.xpack-container"
+	# ${INSTALL} "vscode:extension/fchieze.xpack-container"
+
 docker:
 	${INFO} "Docker"
 	@echo 'Makes it easy to create, manage, and debug containerized applications'
