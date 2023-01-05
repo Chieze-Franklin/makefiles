@@ -1,3 +1,11 @@
+all:
+	${INFO} "Install All"
+	@echo 'Install all extensions in this pack'
+	${LINK} "https://marketplace.visualstudio.com/items?itemName=fchieze.xpack-git"
+	${INSTALL} "https://marketplace.visualstudio.com/items?itemName=fchieze.xpack-git"
+	# ${INSTALL} "vscode:extension/fchieze.xpack-git"
+
+
 git_blame:
 	${INFO} "Git Blame"
 	@echo 'See git blame information in the status bar.'
