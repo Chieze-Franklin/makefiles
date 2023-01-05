@@ -1,3 +1,11 @@
+all:
+	${INFO} "Install All"
+	@echo 'Install all extensions in this pack'
+	${LINK} "https://marketplace.visualstudio.com/items?itemName=fchieze.xpack-graphql"
+	${INSTALL} "https://marketplace.visualstudio.com/items?itemName=fchieze.xpack-graphql"
+	# ${INSTALL} "vscode:extension/fchieze.xpack-graphql"
+
+
 graphql_inline_operation_execution:
 	${INFO} "GraphQL: Inline Operation Execution"
 	@echo 'Provides standalone support for executing graphql operations inline in your code'
