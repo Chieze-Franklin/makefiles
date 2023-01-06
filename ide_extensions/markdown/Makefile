@@ -1,3 +1,11 @@
+all:
+	${INFO} "Install All"
+	@echo 'Install all extensions in this pack'
+	${LINK} "https://marketplace.visualstudio.com/items?itemName=fchieze.xpack-markdown"
+	${INSTALL} "https://marketplace.visualstudio.com/items?itemName=fchieze.xpack-markdown"
+	# ${INSTALL} "vscode:extension/fchieze.xpack-markdown"
+
+
 markdownlint:
 	${INFO} "markdownlint"
 	@echo 'Markdown linting and style checking for Visual Studio Code'
