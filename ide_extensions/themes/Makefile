@@ -1,3 +1,10 @@
+all:
+	${INFO} "Install All"
+	@echo 'Install all extensions in this pack'
+	${LINK} "https://marketplace.visualstudio.com/items?itemName=fchieze.xpack-themes"
+	${INSTALL} "https://marketplace.visualstudio.com/items?itemName=fchieze.xpack-themes"
+	# ${INSTALL} "vscode:extension/fchieze.xpack-themes"
+
 sweet_vscode:
 	${INFO} "Sweet Vscode"
 	@echo 'A dark and modern theme for vscode'
