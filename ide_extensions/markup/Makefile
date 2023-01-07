@@ -1,3 +1,10 @@
+all:
+	${INFO} "Install All"
+	@echo 'Install all extensions in this pack'
+	${LINK} "https://marketplace.visualstudio.com/items?itemName=fchieze.xpack-markup"
+	${INSTALL} "https://marketplace.visualstudio.com/items?itemName=fchieze.xpack-markup"
+	# ${INSTALL} "vscode:extension/fchieze.xpack-markup"
+
 auto_close_tag:
 	${INFO} "Auto Close Tag"
 	@echo 'Automatically add HTML/XML close tag, same as Visual Studio IDE or Sublime Text'
