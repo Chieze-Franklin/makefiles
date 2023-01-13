@@ -64,6 +64,14 @@ docker_compose.x:
 	sudo chmod +x /usr/local/bin/docker-compose
 	${SUCCESS} $@
 
+kazam.x:
+	${INFO} "Install Kazam"
+	@echo 'Install Kazam'
+	${LINK} "https://linuxhint.com/install-kazam-ubuntu-22-04/"
+	# sudo apt install kazam
+	${INSTALL} "kazam"
+	${SUCCESS} $@
+
 nvm.x:
 	${INFO} "Install nvm"
 	@echo 'Install Node Version Manager'
