@@ -1,6 +1,6 @@
 # SHELL=/bin/bash
 
-default: git.x nvm.x yarn.x snap_vscode.x xclip.x snap_slack.x snap_zoom.x snap_docker.x root_docker.x docker_compose.x enable_startup_docker psql.x snap_dbeaver.x
+default: git.x nvm.x yarn.x snap_vscode.x xclip.x snap_slack.x snap_zoom.x snap_docker.x root_docker.x docker_compose.x enable_startup_docker psql.x snap_dbeaver.x kazam.x
 
 clean:
 	@rm -f $(wildcard *.x)
