@@ -1,6 +1,6 @@
 # SHELL=/bin/bash
 
-default: brew.x chrome.x dbeaver.x docker_desktop.x docker.x fig.x ngrok.x nvm.x postgres.x terraform.x lslack.x vscode.x yarn.x zoom.x
+default: brew.x chrome.x dbeaver.x docker_desktop.x docker.x fig.x git_alias.x ngrok.x nvm.x postgres.x terraform.x lslack.x vscode.x yarn.x zoom.x
 
 clean:
 	@rm -f $(wildcard *.x)
@@ -45,6 +45,16 @@ fig.x:
 	@echo 'Install Fig using Homebrew'
 	${LINK} "https://formulae.brew.sh/cask/fig"
 	${BREW} "--cask fig"
+	${SUCCESS} $@
+
+git_alias.x:
+	${INFO} "Git Alias"
+	@echo 'Set up Git Aliases'
+	${LINK} "https://git-scm.com/book/en/v2/Git-Basics-Git-Aliases"
+	git config --global alias.br branch
+	git config --global alias.ch checkout
+	git config --global alias.cm "commit -m"
+	git config --global alias.st status
 	${SUCCESS} $@
 
 ngrok.x:
