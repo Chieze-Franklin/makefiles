@@ -1,6 +1,6 @@
 # SHELL=/bin/bash
 
-default: brew.x chrome.x dbeaver.x docker_desktop.x docker.x fig.x git_alias.x ngrok.x nvm.x postgres.x terraform.x lslack.x vscode.x yarn.x zoom.x
+default: brew.x chrome.x dbeaver.x docker_desktop.x docker.x fig.x git_alias.x ngrok.x nvm.x postgres.x terraform.x slack.x vscode.x yarn.x zoom.x
 
 clean:
 	@rm -f $(wildcard *.x)
