@@ -57,6 +57,13 @@ git_alias.x:
 	git config --global alias.st status
 	${SUCCESS} $@
 
+iterm.x:
+	${INFO} "Install Iterm (2)"
+	@echo 'Install Iterm 2 using Homebrew'
+	${LINK} "https://formulae.brew.sh/cask/iterm2"
+	${BREW} "--cask iterm2"
+	${SUCCESS} $@
+
 ngrok.x:
 	${INFO} "Install ngrok"
 	@echo 'Install ngrok using Homebrew'
