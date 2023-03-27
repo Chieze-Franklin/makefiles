@@ -1,6 +1,6 @@
 # SHELL=/bin/bash
 
-default: brew.x chrome.x dbeaver.x docker_desktop.x docker.x fig.x git_alias.x ngrok.x nvm.x postgres.x terraform.x slack.x vscode.x yarn.x zoom.x
+default: brew.x chrome.x dbeaver.x docker_desktop.x docker.x fig.x git_alias.x iterm.x ngrok.x nvm.x postgres.x postman.x terraform.x slack.x vscode.x yarn.x zoom.x
 
 clean:
 	@rm -f $(wildcard *.x)
@@ -76,6 +76,13 @@ nvm.x:
 	@echo 'Install Node Version Manager using Homebrew'
 	${LINK} "https://formulae.brew.sh/formula/nvm"
 	${BREW} nvm
+	${SUCCESS} $@
+	
+postman.x:
+	${INFO} "Install Postman"
+	@echo 'Install Postman using Homebrew'
+	${LINK} "https://formulae.brew.sh/cask/postman"
+	${BREW} "--cask postman"
 	${SUCCESS} $@
 
 postgres.x:
